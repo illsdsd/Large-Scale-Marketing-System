@@ -12,4 +12,6 @@ import java.util.List;
 public interface IStrategyDao {
 
     List<Strategy> queryAwardList();
+
+    Strategy queryStrategyByStrategyId(Long strategyId);
 }

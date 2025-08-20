@@ -25,7 +25,6 @@ public class AwardDaoTest {
     public void test_queryAwardList(){
       List<Award> awards= awardDao.queryAwardList();
       log.info("测试结果为：{}", JSON.toJSONString(awards));
-
     }
 
 
