@@ -1,4 +1,4 @@
-# xfg-frame-archetype - DDD 脚手架 - @小傅哥 v2.2
+du# xfg-frame-archetype - DDD 脚手架 - @小傅哥 v2.2
 
 - docker 使用文档：[https://bugstack.cn/md/road-map/docker.html](https://bugstack.cn/md/road-map/docker.html)
 - DDD 教程；
