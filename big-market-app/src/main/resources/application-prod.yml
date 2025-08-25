@@ -20,7 +20,7 @@ app:
 # Spring 配置；rabbitmq
 spring:
   rabbitmq:
-    addresses: 116.198.36.253
+    addresses: 117.72.161.86
     port: 5672
     username: admin
     password: admin
@@ -34,7 +34,7 @@ spring:
       credit_adjust_success: credit_adjust_success
   elasticsearch.datasource:
     driverClassName: org.elasticsearch.xpack.sql.jdbc.EsDriver
-    url: jdbc:es://http://elasticsearch:9200
+    url: jdbc:es://http://117.72.161.86:9200
   cloud:
     zookeeper:
       enabled: false
@@ -63,7 +63,7 @@ mini-db-router:
       list: db01,db02
       db00:
         driver-class-name: com.mysql.cj.jdbc.Driver
-        url: jdbc:mysql://mysql:3306/big_market?useUnicode=true&characterEncoding=utf8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&serverTimezone=UTC&useSSL=true
+        url: jdbc:mysql://117.72.161.86:3306/big_market?useUnicode=true&characterEncoding=utf8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&serverTimezone=UTC&useSSL=true
         username: root
         password: 123456
         type-class-name: com.zaxxer.hikari.HikariDataSource
@@ -78,7 +78,7 @@ mini-db-router:
           connection-test-query: SELECT 1
       db01:
         driver-class-name: com.mysql.cj.jdbc.Driver
-        url: jdbc:mysql://mysql:3306/big_market_01?useUnicode=true&characterEncoding=utf8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&serverTimezone=UTC&useSSL=true
+        url: jdbc:mysql://117.72.161.86:3306/big_market_01?useUnicode=true&characterEncoding=utf8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&serverTimezone=UTC&useSSL=true
         username: root
         password: 123456
         type-class-name: com.zaxxer.hikari.HikariDataSource
@@ -93,7 +93,7 @@ mini-db-router:
           connection-test-query: SELECT 1
       db02:
         driver-class-name: com.mysql.cj.jdbc.Driver
-        url: jdbc:mysql://mysql:3306/big_market_02?useUnicode=true&characterEncoding=utf8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&serverTimezone=UTC&useSSL=true
+        url: jdbc:mysql://117.72.161.86:3306/big_market_02?useUnicode=true&characterEncoding=utf8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&serverTimezone=UTC&useSSL=true
         username: root
         password: 123456
         type-class-name: com.zaxxer.hikari.HikariDataSource
@@ -136,7 +136,7 @@ dubbo:
     # address: #multicast://224.5.6.7:1234
     # address: zookeeper://127.0.0.1:2181
     # address: nacos://116.198.36.253:8848
-    address: nacos://nacos:8848
+    address: nacos://117.72.161.86:8848
   protocol:
     name: dubbo
     port: -1
@@ -148,7 +148,7 @@ zookeeper:
     config:
       # 状态；true = 开启、false 关闭
       enable: true
-      connect-string: zookeeper:2181
+      connect-string: 117.72.161.86:2181
       base-sleep-time-ms: 1000
       max-retries: 3
       session-timeout-ms: 18000
@@ -161,7 +161,7 @@ xxl:
     accessToken: default_token
     # 注册地址
     admin:
-      addresses: http://xxl-job-admin:9090/xxl-job-admin
+      addresses: http://117.72.161.86:9090/xxl-job-admin
     # 注册执行器
     executor:
       #  执行器注册 [选填]：优先使用该配置作为注册地址，为空时使用内嵌服务 ”IP:PORT“ 作为注册地址。从而更灵活的支持容器类型执行器动态IP和动态映射端口问题。
