@@ -154,7 +154,7 @@ zookeeper:
       session-timeout-ms: 18000
       connection-timeout-ms: 30000
 
-# xxl-job https://www.xuxueli.com/xxl-job/#%E6%AD%A5%E9%AA%A4%E4%B8%80%EF%BC%9A%E8%B0%83%E5%BA%A6%E4%B8%AD%E5%BF%83%E9%85%8D%E7%BD%AE%EF%BC%9A
+# xxl-job https://www.xuxueli.com/xxl-job/#%%AA%A4%E4%B8%80%EF%BC%9A%E8%B0%83%E5%BA%A6%E4%B8%AD%E5%BF%83%E9%85%8D%E7%BD%AE%EF%BC%9A
 xxl:
   job:
     # 验证信息 官网Bug https://github.com/xuxueli/xxl-job/issues/1951
